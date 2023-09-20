@@ -16,7 +16,15 @@ int run_monty(FILE *script_fd);
  */
 void free_tokens(void)
 {
-	/* implement free_tokens */
+	size_t i = 0;
+
+	if (op_toks == NULL)
+		return;
+
+	for (i = 0; op_toks[i]; i++)
+		free(op_toks[i]);
+
+	free(op_toks);
 }
 
 /**
