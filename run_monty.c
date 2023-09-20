@@ -51,7 +51,20 @@ unsigned int token_arr_len(void)
  */
 int is_empty_line(char *line, char *delims)
 {
-	 /* implement free_tokens */
+	int i, j;
+
+	for (i = 0; line[i]; i++)
+	{
+		for (j = 0; delims[j]; j++)
+		{
+			if (line[i] == delims[j])
+				break;
+		}
+		if (delims[j] == '\0')
+			return (0);
+	}
+
+	return (1);
 }
 
 /**
