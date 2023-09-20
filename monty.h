@@ -5,6 +5,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#define STACK 0
+#define QUEUE 1
+#define DELIMS " \n\t\a\b"
+
+/* GLOBAL OPCODE TOKENS */
+extern char **op_toks;
 
 /* PRIMARY INTERPRETER FUNCTIONS */
 void free_stack(stack_t **stack);
