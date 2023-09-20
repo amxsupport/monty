@@ -36,7 +36,19 @@ void free_stack(stack_t **stack)
  */
 int init_stack(stack_t **stack)
 {
-	/* implement init_stack */
+	stack_t *s;
+
+	s = malloc(sizeof(stack_t));
+	if (s == NULL)
+		return (malloc_error());
+
+	s->n = STACK;
+	s->prev = NULL;
+	s->next = NULL;
+
+	*stack = s;
+
+	return (EXIT_SUCCESS);
 }
 
 /**
