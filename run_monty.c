@@ -34,8 +34,13 @@ void free_tokens(void)
  */
 unsigned int token_arr_len(void)
 {
-	  /* implement free_tokens */
+	unsigned int toks_len = 0;
+
+	while (op_toks[toks_len])
+		toks_len++;
+	return (toks_len);
 }
+
 /**
  * is_empty_line - Checks if a line read from getline only contains delimiters.
  * @line: A pointer to the line.
