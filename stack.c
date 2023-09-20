@@ -16,7 +16,15 @@ int check_mode(stack_t *stack);
  */
 void free_stack(stack_t **stack)
 {
-	/* implement free_stack */
+	size_t i = 0;
+
+	if (op_toks == NULL)
+		return;
+
+	for (i = 0; op_toks[i]; i++)
+		free(op_toks[i]);
+
+	free(op_toks);
 }
 
 /**
