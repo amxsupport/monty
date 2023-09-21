@@ -48,7 +48,9 @@ char *get_int(int num)
  */
 unsigned int _abs(int i)
 {
-	 /* implementation */
+	if (i < 0)
+		return (-(unsigned int)i);
+	return ((unsigned int)i);
 }
 
 /**
