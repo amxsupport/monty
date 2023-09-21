@@ -79,6 +79,7 @@ int no_int_error(unsigned int line_number);
 int pop_error(unsigned int line_number);
 int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
+int div_error(unsigned int line_number);
 
 
 #endif /* __MONTY_H__ */
