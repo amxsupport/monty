@@ -70,5 +70,8 @@ void monty_rotr(stack_t **stack, unsigned int line_number);
 void monty_stack(stack_t **stack, unsigned int line_number);
 void monty_queue(stack_t **stack, unsigned int line_number);
 
+/* ERROR MESSAGES & ERROR CODES */
+int usage_error(void);
+
 
 #endif /* __MONTY_H__ */
