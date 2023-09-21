@@ -78,7 +78,15 @@ char **strtow(char *str, char *delims)
 
 int is_delim(char ch, char *delims)
 {
-	/* implementation */
+	int i = 0;
+
+	while (delims[i])
+	{
+		if (delims[i] == ch)
+			return (1);
+		i++;
+	}
+	return (0);
 }
 
 /**
