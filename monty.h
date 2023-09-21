@@ -77,6 +77,7 @@ int f_open_error(char *filename);
 int unknown_op_error(char *opcode, unsigned int line_number);
 int no_int_error(unsigned int line_number);
 int pop_error(unsigned int line_number);
+int pint_error(unsigned int line_number);
 
 
 #endif /* __MONTY_H__ */
