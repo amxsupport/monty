@@ -78,6 +78,7 @@ int unknown_op_error(char *opcode, unsigned int line_number);
 int no_int_error(unsigned int line_number);
 int pop_error(unsigned int line_number);
 int pint_error(unsigned int line_number);
+int short_stack_error(unsigned int line_number, char *op);
 
 
 #endif /* __MONTY_H__ */
