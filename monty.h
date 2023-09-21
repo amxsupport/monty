@@ -72,6 +72,7 @@ void monty_queue(stack_t **stack, unsigned int line_number);
 
 /* ERROR MESSAGES & ERROR CODES */
 int usage_error(void);
+int malloc_error(void);
 
 
 #endif /* __MONTY_H__ */
