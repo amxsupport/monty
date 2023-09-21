@@ -155,5 +155,16 @@ int get_word_count(char *str, char *delims)
 
 char *get_next_word(char *str, char *delims)
 {
-	 /* implementation */
+	int pending = 0;
+	int i = 0;
+
+	while (*(str + i))
+	{
+		if (is_delim(str[i], delims))
+			pending = 1;
+		else if (pending)
+			break;
+		i++;
+	}
+	return (str + i);
 }
